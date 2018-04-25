@@ -1,0 +1,21 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Time Clocks</title>
+    <script src="{% static 'clock_app/angular.min.js' %}"></script>
+    <script src="{% static 'clock_app/main.js' %}"></script>
+    <style>
+        body, input, button{
+            font-size: 40px;
+        }
+        p{
+            margin: 0;
+        }
+    </style>
+</head>
+<body ng-app="clock_app">
+<app></app>
+</body>
+</html>
